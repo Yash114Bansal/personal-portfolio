@@ -1,59 +1,163 @@
-body{
-    background-image: url("../images/bg.png");
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: CalSans;
+    src: url("../fonts/CalSans.ttf");
+}
+
+
+
+/* 
+font-family: 'Lexend Deca', sans-serif;
+*/
+* {
     margin: 0;
     padding: 0;
     margin-top: 0;
+    box-sizing: border-box;
 }
-ul{
+
+.main-heading {
+    font-family: 'CalSans';
+    font-size: 44.625px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 62.4px;
+}
+
+.heading-2 {
+    font-family: 'CalSans';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48.64px;
+}
+
+.heading-3 {
+    font-family: 'CalSans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44.8px;
+
+}
+
+.body-text {
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.button-text {
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.2px;
+}
+
+.tag-text {
+    font-family: 'Lexend Deca';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16.8px;
+    letter-spacing: 0.84px;
+    text-transform: capitalize;
+}
+
+.points-text {
+    font-family: 'Lexend Deca';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+/* font size, including font families */
+/* colors */
+/* shadows */
+
+
+ul {
     padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: center;
-    
+
 }
-li{
+
+li {
     padding: 1rem;
     text-decoration: none;
 }
-a{
+
+a {
     text-decoration: none;
-    /* background-color: gray; */
     color: white;
+    font-family: "headings_font";
     font-weight: 200;
     font-size: 1em;
 }
-.nav-items{
+
+.nav-items {
+    margin-top: 1rem;
     width: 26rem;
     display: flex;
     background-color: #070B66;
     border-radius: 50px;
     height: 3rem;
-    padding: 5px;
+    /* padding: 10px; */
 }
-.hero{
+
+.hero {
     padding: 10%;
     color: white;
 }
-#hello{
+
+#hello {
     font-size: 2rem;
 }
-#name{
+
+#name {
     font-size: 3rem;
 }
 
+.cards {
+    margin: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+.project-card {
+    display: flex;
+    background-color: #273234;
+    width: 55%;
+    padding: 5%;
+}
+
+
+
 @media only screen and (max-width: 478px) {
-    ul{
+    ul {
         margin: 0;
     }
-    .nav-items{
+
+    .nav-items {
         border-radius: 0%;
         display: block;
         text-align: center;
     }
-    nav{
+
+    nav {
         background-color: #070B66;
         height: 13rem;
-        
+
     }
-    
+
 }
+
