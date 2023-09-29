@@ -267,8 +267,6 @@ a {
 
 
 .cards {
-    margin: 10px;
-    width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
