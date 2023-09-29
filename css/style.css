@@ -5,11 +5,7 @@
     src: url("../fonts/CalSans.ttf");
 }
 
-
-
-/* 
-font-family: 'Lexend Deca', sans-serif;
-*/
+/* Default Styling */
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +13,28 @@ font-family: 'Lexend Deca', sans-serif;
     box-sizing: border-box;
 }
 
+
+
+/* Colors */
+:root{
+    --Primary-color: #ffffff;
+    --Secondary-color: #d9d9d9;
+    --bg-color: #1e1e20;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+
+/* Typography */
 .main-heading {
     font-family: 'CalSans';
     font-size: 44.625px;
     font-style: normal;
     font-weight: 600;
     line-height: 62.4px;
+    color: var(--Primary-color);
 }
 
 .heading-2 {
@@ -31,6 +43,7 @@ font-family: 'Lexend Deca', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: 48.64px;
+    color: var(--Primary-color);
 }
 
 .heading-3 {
@@ -39,6 +52,7 @@ font-family: 'Lexend Deca', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: 44.8px;
+    color: var(--Primary-color);
 
 }
 
@@ -48,14 +62,7 @@ font-family: 'Lexend Deca', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-}
-
-.button-text {
-    font-family: 'Lexend Deca';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 19.2px;
+    color: var(--Secondary-color);
 }
 
 .tag-text {
@@ -66,6 +73,10 @@ font-family: 'Lexend Deca', sans-serif;
     line-height: 16.8px;
     letter-spacing: 0.84px;
     text-transform: capitalize;
+    background: linear-gradient(91deg, #C6FCA6 0%, rgba(167, 252, 238, 0.74) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .points-text {
@@ -74,10 +85,30 @@ font-family: 'Lexend Deca', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 21.6px;
+    color: var(--Secondary-color);
 }
-/* font size, including font families */
-/* colors */
-/* shadows */
+
+
+
+/* Common Classes */
+.button{
+    max-width: 220px;
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 48px;
+    border-radius: 50px;
+    box-shadow: 0px 6px 16px 0px rgba(255, 255, 255, 0.20);
+    color: var(--bg-color);
+    background-color: var(--Primary-color);
+    text-align: center;
+}
 
 
 ul {
@@ -105,10 +136,29 @@ a {
     margin-top: 1rem;
     width: 26rem;
     display: flex;
-    background-color: #070B66;
+    align-items: center;
+    justify-content: center;
     border-radius: 50px;
     height: 3rem;
-    /* padding: 10px; */
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #4D4D4D;
+    position: fixed;
+    z-index: 9999;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.4);
+}
+
+.nac-items:hover{
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.nav-items a li{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: 'Lexend Deca';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
 }
 
 .hero {
@@ -130,16 +180,39 @@ a {
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     color: white;
+    gap: 20px;
 }
 
 .project-card {
     display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
     background-color: #273234;
     width: 55%;
     padding: 5%;
+    border-radius: 30px;
+    
 }
-
+.card-description{
+    width: 65%;
+}
+.project-image{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+.project-name{
+    padding-bottom: 10px;
+}
+.project-title{
+    padding-bottom: 15px;
+}
+.project-description{
+    padding-bottom: 25px;
+    
+}
 
 
 @media only screen and (max-width: 478px) {
@@ -160,4 +233,3 @@ a {
     }
 
 }
-
