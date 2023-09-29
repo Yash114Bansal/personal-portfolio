@@ -16,13 +16,13 @@
 
 
 /* Colors */
-:root{
+:root {
     --Primary-color: #ffffff;
     --Secondary-color: #d9d9d9;
     --bg-color: #1e1e20;
 }
 
-body{
+body {
     background-color: var(--bg-color);
 }
 
@@ -91,7 +91,7 @@ body{
 
 
 /* Common Classes */
-.button{
+.button {
     max-width: 220px;
     font-family: 'Lexend Deca';
     font-size: 16px;
@@ -132,6 +132,7 @@ a {
     font-size: 1em;
 }
 
+/* Navbar */
 .nav-items {
     margin-top: 1rem;
     width: 26rem;
@@ -148,7 +149,7 @@ a {
     box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.4);
 }
 
-.nav-items a li{
+.nav-items a li {
     color: rgba(255, 255, 255, 0.80);
     font-family: 'Lexend Deca';
     font-size: 14px;
@@ -156,19 +157,95 @@ a {
     font-weight: 700;
     line-height: 14px;
 }
-
-.hero {
-    padding: 10%;
-    color: white;
+/* hero */
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+.image-box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#hello {
-    font-size: 2rem;
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+}
+.hero-content p{
+    color: var(--Secondary-color);
 }
 
-#name {
-    font-size: 3rem;
+.button-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
+.button2{
+    max-width: 340px;
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 48px;
+    border: 1px solid var(--Primary-color);
+    border-radius: 50px;
+    color: var(--Primary-color);
+    background-color: rgba(255, 255, 255, 0.09);
+    text-align: center;
+}
+
+/* Marquee */
+.marquee-container {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 20px;
+    opacity: 69%;
+}
+
+/* Style for the marquee text */
+.marquee-text {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    display: flex;
+    align-items: center;
+
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Style for the icons */
+.icon {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
 
 .cards {
     margin: 10px;
@@ -189,26 +266,33 @@ a {
     width: 55%;
     padding: 5%;
     border-radius: 30px;
-    
+
 }
-.card-description{
+
+.card-description {
     width: 65%;
 }
-.project-image{
+
+.project-image {
     width: 35%;
     display: flex;
     justify-content: center;
 }
-.project-name{
+
+.project-name {
     padding-bottom: 10px;
 }
-.project-title{
+
+.project-title {
     padding-bottom: 15px;
 }
-.project-description{
+
+.project-description {
     padding-bottom: 25px;
-    
+
 }
+
+
 
 
 @media only screen and (max-width: 478px) {
