@@ -30,12 +30,12 @@ html {
 
 ::-webkit-scrollbar {
     width: 8px;
-  }
-  
-::-webkit-scrollbar-thumb{
+}
+
+::-webkit-scrollbar-thumb {
     background-color: var(--Primary-color);
     border-radius: 8px;
-  }
+}
 
 body {
     background-color: var(--bg-color);
@@ -175,7 +175,7 @@ a {
 
 /* hero */
 .hero {
-    height: 40rem;
+    height: 36rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -237,6 +237,7 @@ a {
     overflow: hidden;
     border-radius: 20px;
     opacity: 69%;
+    margin: auto;
 }
 
 .marquee-text {
@@ -279,13 +280,36 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: url('../images/Project-Img01.png');
-    object-fit: cover;
     width: 55%;
     padding: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
     border-radius: 30px;
 
 }
+
+.card-1 {
+    background: rgba(255, 255, 255, 0.5);
+    background-image: url('../images/Project-Img01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-2 {
+    background: rgba(255, 255, 255, 0.5);
+    background-image: url('../images/Project-Img02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-3 {
+    background: rgba(255, 255, 255, 0.5);
+    background-image: url('../images/Project-Img03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 
 .card-description {
     width: 65%;
@@ -297,12 +321,14 @@ a {
     display: flex;
     justify-content: center;
 }
-#project-pic{
+
+#project-pic {
     /* width: 100%;
     height: 100%; */
     overflow: hidden;
     /* border-radius: 50px; */
 }
+
 .project-name {
     padding-bottom: 10px;
 }
@@ -316,14 +342,24 @@ a {
 
 }
 
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    padding: 30px;
+}
+
 .about-me {
     gap: 15px;
-    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    margin: auto;
+    margin: auto
 }
 
 
@@ -334,7 +370,7 @@ footer {
 }
 
 .footer-container {
-    border-top: 2px solid rgba(217, 217, 217,0.2);
+    border-top: 2px solid rgba(217, 217, 217, 0.2);
     padding-top: 30px;
     margin: 0 auto;
 }
@@ -348,8 +384,11 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #0077b5; /* Change color on hover (LinkedIn blue) */
+    color: #0077b5;
+    /* Change color on hover (LinkedIn blue) */
 }
+
+@media only screen and (max-width: 1195px) {}
 
 @media only screen and (max-width: 478px) {
     ul {
