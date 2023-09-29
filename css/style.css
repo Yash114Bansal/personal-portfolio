@@ -62,7 +62,7 @@ body {
     line-height: 48.64px;
     color: var(--Primary-color);
     max-width: 85%;
-    margin: auto;
+    margin: 0;
 }
 
 .heading-3 {
@@ -142,14 +142,16 @@ li {
     padding: 1rem;
     text-decoration: none;
 }
-
-a {
+a{
     text-decoration: none;
+}
+nav a {
     color: white;
     font-family: "headings_font";
     font-weight: 200;
     font-size: 1em;
 }
+
 
 /* Navbar */
 .nav-items {
@@ -478,5 +480,10 @@ footer {
     }
     .marquee-text{
         font-size: 20px;
+    }
+}
+@media (max-width: 1444px) {
+    body{
+        overflow-x: hidden
     }
 }
