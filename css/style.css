@@ -50,6 +50,8 @@ body {
     font-weight: 600;
     line-height: 62.4px;
     color: var(--Primary-color);
+    max-width: 90%;
+    margin: auto;
 }
 
 .heading-2 {
@@ -59,6 +61,8 @@ body {
     font-weight: 600;
     line-height: 48.64px;
     color: var(--Primary-color);
+    max-width: 85%;
+    margin: auto;
 }
 
 .heading-3 {
@@ -351,6 +355,8 @@ a {
     gap: 8px;
     margin-bottom: 16px;
     padding: 30px;
+    max-width: 80%;
+    margin: auto;
 }
 
 .about-me {
@@ -388,11 +394,46 @@ footer {
     /* Change color on hover (LinkedIn blue) */
 }
 
-@media only screen and (max-width: 1195px) {}
+@media only screen and (max-width: 1044px) {
+    .about-me {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
+
+    .marquee-container {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1270px) {
+    #project-pic {
+        display: none;
+    }
+
+    .project-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media only screen and (max-width: 478px) {
     ul {
         margin: 0;
+    }
+    .project-card{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .nav-items {
@@ -404,7 +445,38 @@ footer {
 
     nav {
         height: 13rem;
-
+    }
+    .button{
+        max-width: 120px;
+        font-size: 12px;
+    }
+    .button2{
+        max-width: 220px;
+        font-size: 12px;
     }
 
+}
+
+@media only screen and (max-width: 650px) {
+    .main-heading {
+        font-size: 30px;
+    }
+    .heading-2 {
+        font-size: 25px;
+    }
+    .heading-3 {
+        font-size: 15px;
+    }
+    .body-text {
+        font-size: 12px;
+    }
+    .tag-text {
+        font-size: 14px;
+    }
+    .project-card{
+        width: 90%;
+    }
+    .marquee-text{
+        font-size: 20px;
+    }
 }
