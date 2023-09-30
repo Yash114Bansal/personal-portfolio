@@ -39,7 +39,7 @@ html {
 
 body {
     background-color: var(--bg-color);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -196,6 +196,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
 }
 
 .hero-content {
@@ -394,21 +395,16 @@ footer {
 
 .social-icons a:hover {
     color: #0077b5;
-    /* Change color on hover (LinkedIn blue) */
-}
 
-@media only screen and (max-width: 1044px) {
-    .about-me {
-        flex-wrap: wrap-reverse;
-        text-align: center;
-    }
-
-    .marquee-container {
-        width: 100%;
-    }
 }
 
 
+
+@media (max-width: 1444px) {
+    body{
+        overflow-x: hidden
+    }
+}
 @media only screen and (max-width: 1270px) {
     #project-pic {
         display: none;
@@ -430,6 +426,44 @@ footer {
     }
 }
 
+
+
+
+@media only screen and (max-width: 1044px) {
+    .about-me {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
+
+    .marquee-container {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .main-heading {
+        font-size: 30px;
+    }
+    .heading-2 {
+        font-size: 25px;
+    }
+    .heading-3 {
+        font-size: 15px;
+    }
+    .body-text {
+        font-size: 12px;
+    }
+    .tag-text {
+        font-size: 14px;
+    }
+    .project-card{
+        width: 90%;
+    }
+    .marquee-text{
+        font-size: 20px;
+    }
+}
 @media only screen and (max-width: 478px) {
     ul {
         margin: 0;
@@ -459,31 +493,8 @@ footer {
     }
 
 }
+@media only screen and (max-width: 412px){
 
-@media only screen and (max-width: 650px) {
-    .main-heading {
-        font-size: 30px;
-    }
-    .heading-2 {
-        font-size: 25px;
-    }
-    .heading-3 {
-        font-size: 15px;
-    }
-    .body-text {
-        font-size: 12px;
-    }
-    .tag-text {
-        font-size: 14px;
-    }
-    .project-card{
-        width: 90%;
-    }
-    .marquee-text{
-        font-size: 20px;
-    }
-}
-@media (max-width: 1444px) {
     body{
         overflow-x: hidden
     }
